@@ -1,0 +1,22 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "description": "A my.js project",
+  "main": "src/test_param.js",
+  "private": true,
+  "author": "Den Den <den@1.com> (https://1.com)",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "testCowsay": "cowsay Denis -d",
+    "lint": "eslint --ext .js,.vue src test/unit",
+    "build": "node build/build.js"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "cowsay": "^1.5.0",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.5"
+  }
+}
